@@ -1,0 +1,91 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="French Verb Workshop"
+    FocusManager.FocusedElement="{Binding ElementName=InfinitiveTBX}" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1000" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="400" />
+                </Grid.RowDefinitions>
+                <TextBox Grid.Row="0" Name="InfinitiveTBX" />
+                <DataGrid Grid.Row="1" Name="DataGrid1" ItemsSource="{Binding}" CanUserAddRows="False" CanUserDeleteRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Regex" Binding="{Binding Attributes[REGEX].Value}" Width="100" />
+                        <DataGridTextColumn Header="Infinitive" Binding="{Binding Attributes[INFINITIVE].Value}" />
+                        <DataGridTextColumn Header="Notes" Binding="{Binding Attributes[NOTES].Value}" Width="100" />
+                        <DataGridTextColumn Header="Radical" Binding="{Binding Attributes[RADICAL].Value}" />
+                        <DataGridTextColumn Header="Ending" Binding="{Binding Attributes[ENDING].Value}" />
+                        <DataGridTextColumn Header="PPRESENT" Binding="{Binding Attributes[PPRESENT].Value}" />
+                        <DataGridTextColumn Header="PPASSÉ" Binding="{Binding Attributes[PPASSÉ].Value}" />
+                        <DataGridTextColumn Header="PRÉSENT" Binding="{Binding Attributes[PRÉSENT].Value}" />
+                        <DataGridTextColumn Header="IMPARFAIT" Binding="{Binding Attributes[IMPARFAIT].Value}" />
+                        <DataGridTextColumn Header="PASSÉ" Binding="{Binding Attributes[PASSÉ].Value}" />
+                        <DataGridTextColumn Header="FUTUR" Binding="{Binding Attributes[FUTUR].Value}" />
+                        <DataGridTextColumn Header="SPRÉSENT" Binding="{Binding Attributes[SPRÉSENT].Value}" />
+                        <DataGridTextColumn Header="SIMPARFAIT" Binding="{Binding Attributes[SIMPARFAIT].Value}" />
+                        <DataGridTextColumn Header="IMPÉRATIF" Binding="{Binding Attributes[IMPÉRATIF].Value}" />
+                        <DataGridTextColumn Header="CONDITION" Binding="{Binding Attributes[CONDITION].Value}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid Grid.Row="2" Name="DataGrid2" AutoGenerateColumns="True" CanUserAddRows="False" CanUserDeleteRows="False" />
+             </Grid>
+            <GroupBox Grid.Column="1" Header="Options">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="200" />
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Grid.Column="0" Header="Tenses">
+                        <StackPanel Name="TensesSP">
+                            <CheckBox Content="Je" IsChecked="True" Click="CheckBox_Click" Tag="0" />
+                            <CheckBox Content="Tu" IsChecked="True" Click="CheckBox_Click" Tag="1" />
+                            <CheckBox Content="Il/Elle" IsChecked="True" Click="CheckBox_Click" Tag="2" />
+                            <CheckBox Content="Nous" IsChecked="True" Click="CheckBox_Click" Tag="3" />
+                            <CheckBox Content="Vous" IsChecked="True" Click="CheckBox_Click" Tag="4" />
+                            <CheckBox Content="Ils" IsChecked="True" Click="CheckBox_Click" Tag="5" />
+                            <Button Name="SelectAllTensesBtn" Content="Select All" Click="SelectAllTensesBtn_Click" Width="62" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Grid.Column="1" Header="Conjugations">
+                        <StackPanel Name="ConjugationsSP">
+                            <CheckBox Content="Présent" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Passé Composé" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Imparfait" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Plus-que-parfait" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Futur Simple" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Futur Antérieur" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Conditionnel Présent" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Conditionnel Passé" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Subjonctif Présent" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Subjonctif Passé" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Subjonctif Imparfait" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Subjonctif Plus-que-parfait" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Passé simple" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Passé Antérieur" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Impératif Présent" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Infinitif Présent" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Participe Présent" IsChecked="True" Click="CheckBox_Click" />
+                            <CheckBox Content="Participe Passé" IsChecked="True" Click="CheckBox_Click" />
+                            <Button Name="SelectAllConjugationsBtn" Content="Select All" Click="SelectAllConjugationsBtn_Click" Width="62" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </GroupBox>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button Name="CloseBtn" Content="Close" Width="72" IsDefault="True" IsCancel="True" />
+        </StackPanel>
+    </Grid>
+</Window>
