@@ -1,0 +1,26 @@
+<GameView>:
+    result_label:result_label
+
+    BoxLayout:
+        orientation: "vertical"
+        Image:
+            source: "logo.png"
+            allow_stretch: True
+            keep_ratio: True
+            size_hint: None, None
+            width: self.parent.width
+            height: self.parent.width/self.image_ratio
+        BoxLayout:
+            orientation: "vertical"
+            padding: 100, 30, 100, 30
+        Label:
+            id: result_label
+            text: root.my_text
+            font_size: 30
+        Button:
+            text: "Enregistement"
+            size_hint: 1, 0.5
+            bold: True
+            background_clor: "#0065EF"
+            on_press: root.start_record()
+            on_release: root.stop_record()
