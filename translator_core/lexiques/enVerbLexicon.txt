@@ -1,6 +1,5 @@
-	PRESENT				PAST SIMPLE				FUTURE
-suis,es,est,sommes,êtes,sont étais,étais,était,étions,étiez,étaient serai,seras,sera,serons,serez,seront
-ai,as,a,avons,avez,ont avais,avais,avait,avions,aviez,avaient aurai,auras,aura,aurons,aurez,auront
+am,are,is,are,are,are was,were,was,were,were,were been,been,been,been,been,been
+have,have,has,have,have,have had,had,had,had,had,had had,had,had,had,had,had
 go,go,goes,go,go,go went,went,went,went,went,went will_go,will_go,will_go,will_go,will_go,will_go
 fall,fall,falls,fall,fall,fall fell,fell,fell,fell,fell,fell will_fall,will_fall,will_fall,will_fall,will_fall,will_fall
 send,send,sends,send,send,send sent,sent,sent,sent,sent,sent will_send,will_send,will_send,will_send,will_send,will_send
