@@ -1,0 +1,947 @@
+	PRESENT				IMPARFAIT				FUTUR
+bin,bist,ist,sind,seid,sind war,warst,war,waren,wart,waren werde_sein,wirst_sein,wird_sein,werden_sein,werdet_sein,werden_sein
+habe,hast,hat,haben,habt,haben hatte,hattest,hatte,hatten,hattet,hatten werde_haben,wirst_haben,wird_haben,werden_haben,werdet_haben,werden_haben
+gehe,gehst,geht,gehen,geht,gehen ging,gingst,ging,gingen,gingt,gingen werde_gehen,wirst_gehen,wird_gehen,werden_gehen,werdet_gehen,werden_gehen
+fälle,fällst,fällt,fällen,fällt,fällen fällte,fälltest,fällte,fällten,fälltet,fällten werde_fällen,wirst_fällen,wird_fällen,werden_fällen,werdet_fällen,werden_fällen
+sende,sendest,sendet,senden,sendet,senden sendete,sendetest,sendete,sendeten,sendetet,sendeten werde_senden,wirst_senden,wird_senden,werden_senden,werdet_senden,werden_senden
+platziere,platzierst,platziert,platzieren,platzieret,platzieren platzierte,platziertest,platzierte,platzierten,platziertet,platzierten
+werfe,wirfst,wirft,werfen,werft,werfen warf,warfst,warf,warfen,warft,warfen werde_werfen,wirst_werfen,wird_werfen,werden_werfen,werdet_werfen,werden_werfen
+wiege,wiegst,wiegt,wiegen,wiegt,wiegen wog,wogst,wog,wogen,wogt,wogen werde_wiegen,wirst_wiegen,wird_wiegen,werden_wiegen,werdet_wiegen,werden_wiegen
+feire,feierst,feiert,feiern,feiert,feiern feierte,feiertest,feierte,feierten,feiertet,feierten werde_feiern,wirst_feiern,wird_feiern,werden_feiern,werdet_feiern,werden_feiern
+passe_an,passt_an,passt_an,passen_an,passt_an,passen_an passte_an,passtest_an,passte_an,passten_an,passtet_an,passten_an werde_anpassen,wirst_anpassen,wird_anpassen,werden_anpassen,werdet_anpassen,werden_anpassen
+schütze,schützt,schützt,schützen,schützt,schützen schützte,schütztest,schützte,schützten,schütztet,schützten werde_schützen,wirst_schützen,wird_schützen,werden_schützen,werdet_schützen,werden_schützen
+esse,isst,isst,essen,esst,essen aß,aßest,aß,aßen,aßt,aßen werde_essen,wirst_essen,wird_essen,werden_essen,werdet_essen,werden_essen
+spreche,sprichst,spricht,sprechen,sprecht,sprechen sprach,sprachst,sprach,sprachen,spracht,sprachen werde_sprechen,wirst_sprechen,wird_sprechen,werden_sprechen,werdet_sprechen,werden_sprechen
+lüge,lügst,lügt,lügen,lügt,lügen log,logst,log,logen,logt,logen werde_lügen,wirst_lügen,wird_lügen,werden_lügen,werdet_lügen,werden_lügen
+sterbe,stirbst,stirbt,sterben,sterbt,sterben starb,starbst,starb,starben,starbt,starben werde_sterben,wirst_sterben,wird_sterben,werden_sterben,werdet_sterben,werden_sterben
+verlasse,verlässt,verlässt,verlassen,verlasst,verlassen verließ,verließest,verließ,verließen,verließt,verließen werde_verlassen,wirst_verlassen,wird_verlassen,werden_verlassen,werdet_verlassen,werden_verlassen
+kann,kannst,kann,können,könnt,können konnte,konntest,konnte,konnten,konntet,konnten werde_können,wirst_können,wird_können,werden_können,werdet_können,werden_können
+sage_vorher,sagst_vorher,sagt_vorher,sagen_vorher,sagt_vorher,sagen_vorher sagte_vorher,sagtest_vorher,sagte_vorher,sagten_vorher,sagtet_vorher,sagten_vorher werde_vorhersagen,wirst_vorhersagen,wird_vorhersagen,werden_vorhersagen,werdet_vorhersagen,werden_vorhersagen
+gehe aus
+du gehst aus
+er/sie/es geht aus
+wir gehen aus
+ihr geht aus
+sie/Sie gehen aus
+Präteritum (Imparfait)
+ich ging aus
+du gingst aus
+er/sie/es ging aus
+wir gingen aus
+ihr gingt aus
+sie/Sie gingen aus
+werde ausgehen
+du wirst ausgehen
+er/sie/es wird ausgehen
+wir werden ausgehen
+ihr werdet ausgehen
+sie/Sie werden ausgehen
+
+kleide
+du kleidest
+er/sie/es kleidet
+wir kleiden
+ihr kleidet
+sie/Sie kleiden
+Präteritum (Imparfait)
+ich kleidete
+du kleidetest
+er/sie/es kleidete
+wir kleideten
+ihr kleidetet
+sie/Sie kleideten
+werde kleiden
+du wirst kleiden
+er/sie/es wird kleiden
+wir werden kleiden
+ihr werdet kleiden
+sie/Sie werden kleiden
+
+ sitze
+du sitzt
+er/sie/es sitzt
+wir sitzen
+ihr sitzt
+sie/Sie sitzen
+Präteritum (Imparfait)
+ich saß
+du saßest
+er/sie/es saß
+wir saßen
+ihr saßt
+sie/Sie saßen
+werde sitzen
+du wirst sitzen
+er/sie/es wird sitzen
+wir werden sitzen
+ihr werdet sitzen
+sie/Sie werden sitzen
+
+koche
+du kochst
+er/sie/es kocht
+wir kochen
+ihr kocht
+sie/Sie kochen
+Präteritum (Imparfait)
+ich kochte
+du kochtest
+er/sie/es kochte
+wir kochten
+ihr kochtet
+sie/Sie kochten
+werde kochen
+du wirst kochen
+er/sie/es wird kochen
+wir werden kochen
+ihr werdet kochen
+sie/Sie werden kochen
+
+bekomme
+du bekommst
+er/sie/es bekommt
+wir bekommen
+ihr bekommt
+sie/Sie bekommen
+Präteritum (Imparfait)
+ich bekam
+du bekamst
+er/sie/es bekam
+wir bekamen
+ihr bekamt
+sie/Sie bekamen
+werde bekommen
+du wirst bekommen
+er/sie/es wird bekommen
+wir werden bekommen
+ihr werdet bekommen
+sie/Sie werden bekommen
+
+laufe
+du läufst
+er/sie/es läuft
+wir laufen
+ihr lauft
+sie/Sie laufen
+Präteritum (Imparfait)
+ich lief
+du liefst
+er/sie/es lief
+wir liefen
+ihr lieft
+sie/Sie liefen
+werde laufen
+du wirst laufen
+er/sie/es wird laufen
+wir werden laufen
+ihr werdet laufen
+sie/Sie werden laufen
+
+
+sammle
+du sammelst
+er/sie/es sammelt
+wir sammeln
+ihr sammelt
+sie/Sie sammeln
+Präteritum (Imparfait)
+ich sammelte
+du sammeltest
+er/sie/es sammelte
+wir sammelten
+ihr sammeltet
+sie/Sie sammelten
+werde sammeln
+du wirst sammeln
+er/sie/es wird sammeln
+wir werden sammeln
+ihr werdet sammeln
+sie/Sie werden sammeln
+
+muss
+du musst
+er/sie/es muss
+wir müssen
+ihr müsst
+sie/Sie müssen
+Präteritum (Imparfait)
+ich musste
+du musstest
+er/sie/es musste
+wir mussten
+ihr musstet
+sie/Sie mussten
+werde müssen
+du wirst müssen
+er/sie/es wird müssen
+wir werden müssen
+ihr werdet müssen
+sie/Sie werden müssen
+
+schlafe ein
+du schläfst ein
+er/sie/es schläft ein
+wir schlafen ein
+ihr schlaft ein
+sie/Sie schlafen ein
+Präteritum (Imparfait)
+ich schlief ein
+du schliefst ein
+er/sie/es schlief ein
+wir schliefen ein
+ihr schlieft ein
+sie/Sie schliefen ein
+ werde einschlafen
+du wirst einschlafen
+er/sie/es wird einschlafen
+wir werden einschlafen
+ihr werdet einschlafen
+sie/Sie werden einschlafen
+
+schlafe
+du schläfst
+er/sie/es schläft
+wir schlafen
+ihr schlaft
+sie/Sie schlafen
+Präteritum (Imparfait)
+ich schlief
+du schliefst
+er/sie/es schlief
+wir schliefen
+ihr schlieft
+sie/Sie schliefen
+werde schlafen
+du wirst schlafen
+er/sie/es wird schlafen
+wir werden schlafen
+ihr werdet schlafen
+sie/Sie werden schlafen
+
+fliehe
+du fliehst
+er/sie/es flieht
+wir fliehen
+ihr flieht
+sie/Sie fliehen
+Präteritum (Imparfait)
+ich floh
+du flohst
+er/sie/es floh
+wir flohen
+ihr floht
+sie/Sie flohen
+werde fliehen
+du wirst fliehen
+er/sie/es wird fliehen
+wir werden fliehen
+ihr werdet fliehen
+sie/Sie werden fliehen
+
+hasse
+du hasst
+er/sie/es hasst
+wir hassen
+ihr hasst
+sie/Sie hassen
+Präteritum (Imparfait)
+ich hasste
+du hasstest
+er/sie/es hasste
+wir hassten
+ihr hasstet
+sie/Sie hassten
+werde hassen
+du wirst hassen
+er/sie/es wird hassen
+wir werden hassen
+ihr werdet hassen
+sie/Sie werden hassen
+
+verspreche
+du versprichst
+er/sie/es verspricht
+wir versprechen
+ihr versprecht
+sie/Sie versprechen
+Präteritum (Imparfait)
+ich versprach
+du versprachst
+er/sie/es versprach
+wir versprachen
+ihr verspracht
+sie/Sie versprachen
+werde versprechen
+du wirst versprechen
+er/sie/es wird versprechen
+wir werden versprechen
+ihr werdet versprechen
+sie/Sie werden versprechen
+
+öffne
+du öffnest
+er/sie/es öffnet
+wir öffnen
+ihr öffnet
+sie/Sie öffnen
+Präteritum (Imparfait)
+ich öffnete
+du öffnetest
+er/sie/es öffnete
+wir öffneten
+ihr öffnetet
+sie/Sie öffneten
+werde öffnen
+du wirst öffnen
+er/sie/es wird öffnen
+wir werden öffnen
+ihr werdet öffnen
+sie/Sie werden öffnen
+
+ weiß
+du weißt
+er/sie/es weiß
+wir wissen
+ihr wisst
+sie/Sie wissen
+Präteritum (Imparfait)
+ich wusste
+du wusstest
+er/sie/es wusste
+wir wussten
+ihr wusstet
+sie/Sie wussten
+werde wissen
+du wirst wissen
+er/sie/es wird wissen
+wir werden wissen
+ihr werdet wissen
+sie/Sie werden wissen
+
+diene
+du dienst
+er/sie/es dient
+wir dienen
+ihr dient
+sie/Sie dienen
+Präteritum (Imparfait)
+ich diente
+du dientest
+er/sie/es diente
+wir dienten
+ihr dientet
+sie/Sie dienten
+werde dienen
+du wirst dienen
+er/sie/es wird dienen
+wir werden dienen
+ihr werdet dienen
+sie/Sie werden dienen
+
+komme
+du kommst
+er/sie/es kommt
+wir kommen
+ihr kommt
+sie/Sie kommen
+Präteritum (Imparfait)
+ich kam
+du kamst
+er/sie/es kam
+wir kamen
+ihr kamt
+sie/Sie kamen
+werde kommen
+du wirst kommen
+er/sie/es wird kommen
+wir werden kommen
+ihr werdet kommen
+sie/Sie werden kommen
+
+will
+du willst
+er/sie/es will
+wir wollen
+ihr wollt
+sie/Sie wollen
+Präteritum (Imparfait)
+ich wollte
+du wolltest
+er/sie/es wollte
+wir wollten
+ihr wolltet
+sie/Sie wollten
+werde wollen
+du wirst wollen
+er/sie/es wird wollen
+wir werden wollen
+ihr werdet wollen
+sie/Sie werden wollen
+
+sehe
+du siehst
+er/sie/es sieht
+wir sehen
+ihr seht
+sie/Sie sehen
+Präteritum (Imparfait)
+ich sah
+du sahst
+er/sie/es sah
+wir sahen
+ihr saht
+sie/Sie sahen
+werde sehen
+du wirst sehen
+er/sie/es wird sehen
+wir werden sehen
+ihr werdet sehen
+sie/Sie werden sehen
+
+beende
+du beendest
+er/sie/es beendet
+wir beenden
+ihr beendet
+sie/Sie beenden
+Präteritum (Imparfait)
+ich beendete
+du beendetest
+er/sie/es beendete
+wir beendeten
+ihr beendetet
+sie/Sie beendeten
+werde beenden
+du wirst beenden
+er/sie/es wird beenden
+wir werden beenden
+ihr werdet beenden
+sie/Sie werden beenden
+
+enthalte
+du enthältst
+er/sie/es enthält
+wir enthalten
+ihr enthaltet
+sie/Sie enthalten
+Präteritum (Imparfait)
+ich enthielt
+du enthieltest
+er/sie/es enthielt
+wir enthielten
+ihr enthieltet
+sie/Sie enthielten
+werde enthalten
+du wirst enthalten
+er/sie/es wird enthalten
+wir werden enthalten
+ihr werdet enthalten
+sie/Sie werden enthalten
+
+bezahle
+du bezahlst
+er/sie/es bezahlt
+wir bezahlen
+ihr bezahlt
+sie/Sie bezahlen
+Präteritum (Imparfait)
+ich bezahlte
+du bezahltest
+er/sie/es bezahlte
+wir bezahlten
+ihr bezahltet
+sie/Sie bezahlten
+werde bezahlen
+du wirst bezahlen
+er/sie/es wird bezahlen
+wir werden bezahlen
+ihr werdet bezahlen
+sie/Sie werden bezahlen
+
+löse
+du löst
+er/sie/es löst
+wir lösen
+ihr löst
+sie/Sie lösen
+Präteritum (Imparfait)
+ich löste
+du löstest
+er/sie/es löste
+wir lösten
+ihr löstet
+sie/Sie lösten
+werde lösen
+du wirst lösen
+er/sie/es wird lösen
+wir werden lösen
+ihr werdet lösen
+sie/Sie werden lösen
+
+genüge
+du genügst
+er/sie/es genügt
+wir genügen
+ihr genügt
+sie/Sie genügen
+Präteritum (Imparfait)
+ich genügte
+du genügtest
+er/sie/es genügte
+wir genügten
+ihr genügtet
+sie/Sie genügten
+werde genügen
+du wirst genügen
+er/sie/es wird genügen
+wir werden genügen
+ihr werdet genügen
+sie/Sie werden genügen
+
+vertusche
+du vertuschst
+er/sie/es vertuscht
+wir vertuschen
+ihr vertuscht
+sie/Sie vertuschen
+Präteritum (Imparfait)
+ich vertuschte
+du vertuschtest
+er/sie/es vertuschte
+wir vertuschten
+ihr vertuschtet
+sie/Sie vertuschten
+werde vertuschen
+du wirst vertuschen
+er/sie/es wird vertuschen
+wir werden vertuschen
+ihr werdet vertuschen
+sie/Sie werden vertuschen
+
+schlage
+du schlägst
+er/sie/es schlägt
+wir schlagen
+ihr schlagt
+sie/Sie schlagen
+Präteritum (Imparfait)
+ich schlug
+du schlugst
+er/sie/es schlug
+wir schlugen
+ihr schlugt
+sie/Sie schlugen
+werde schlagen
+du wirst schlagen
+er/sie/es wird schlagen
+wir werden schlagen
+ihr werdet schlagen
+sie/Sie werden schlagen
+
+nehme
+du nimmst
+er/sie/es nimmt
+wir nehmen
+ihr nehmt
+sie/Sie nehmen
+Präteritum (Imparfait)
+ich nahm
+du nahmst
+er/sie/es nahm
+wir nahmen
+ihr nahmt
+sie/Sie nahmen
+werde nehmen
+du wirst nehmen
+er/sie/es wird nehmen
+wir werden nehmen
+ihr werdet nehmen
+sie/Sie werden nehmen
+
+trinke
+du trinkst
+er/sie/es trinkt
+wir trinken
+ihr trinkt
+sie/Sie trinken
+Präteritum (Imparfait)
+ich trank
+du trankst
+er/sie/es trank
+wir tranken
+ihr trankt
+sie/Sie tranken
+werde trinken
+du wirst trinken
+er/sie/es wird trinken
+wir werden trinken
+ihr werdet trinken
+sie/Sie werden trinken
+
+nähe
+du nähst
+er/sie/es näht
+wir nähen
+ihr näht
+sie/Sie nähen
+Präteritum (Imparfait)
+ich nähte
+du nähtest
+er/sie/es nähte
+wir nähten
+ihr nähtet
+sie/Sie nähten
+werde nähen
+du wirst nähen
+er/sie/es wird nähen
+wir werden nähen
+ihr werdet nähen
+sie/Sie werden nähen
+
+kreische
+du kreischst
+er/sie/es kreischt
+wir kreischen
+ihr kreischt
+sie/Sie kreischen
+Präteritum (Imparfait)
+ich kreischte
+du kreischtest
+er/sie/es kreischte
+wir kreischten
+ihr kreischtet
+sie/Sie kreischten
+werde kreischen
+du wirst kreischen
+er/sie/es wird kreischen
+wir werden kreischen
+ihr werdet kreischen
+sie/Sie werden kreischen
+
+glaube
+du glaubst
+er/sie/es glaubt
+wir glauben
+ihr glaubt
+sie/Sie glauben
+Präteritum (Imparfait)
+ich glaubte
+du glaubtest
+er/sie/es glaubte
+wir glaubten
+ihr glaubtet
+sie/Sie glaubten
+werde glauben
+du wirst glauben
+er/sie/es wird glauben
+wir werden glauben
+ihr werdet glauben
+sie/Sie werden glauben
+
+ steige
+du steigst
+er/sie/es steigt
+wir steigen
+ihr steigt
+sie/Sie steigen
+Präteritum (Imparfait)
+ich stieg
+du stiegst
+er/sie/es stieg
+wir stiegen
+ihr stiegt
+sie/Sie stiegen
+werde steigen
+du wirst steigen
+er/sie/es wird steigen
+wir werden steigen
+ihr werdet steigen
+sie/Sie werden steigen
+
+säge
+du sägst
+er/sie/es sägt
+wir sägen
+ihr sägt
+sie/Sie sägen
+Präteritum (Imparfait)
+ich sägte
+du sägtest
+er/sie/es sägte
+wir sägten
+ihr sägtet
+sie/Sie sägten
+werde sägen
+du wirst sägen
+er/sie/es wird sägen
+wir werden sägen
+ihr werdet sägen
+sie/Sie werden sägen
+
+mache
+du machst
+er/sie/es macht
+wir machen
+ihr macht
+sie/Sie machen
+Präteritum (Imparfait)
+ich machte
+du machtest
+er/sie/es machte
+wir machten
+ihr machtet
+sie/Sie machten
+werde machen
+du wirst machen
+er/sie/es wird machen
+wir werden machen
+ihr werdet machen
+sie/Sie werden machen
+
+lese
+du liest
+er/sie/es liest
+wir lesen
+ihr lest
+sie/Sie lesen
+Präteritum (Imparfait)
+ich las
+du last
+er/sie/es las
+wir lasen
+ihr last
+sie/Sie lasen
+werde lesen
+du wirst lesen
+er/sie/es wird lesen
+wir werden lesen
+ihr werdet lesen
+sie/Sie werden lesen
+
+stelle
+du stellst
+er/sie/es stellt
+wir stellen
+ihr stellt
+sie/Sie stellen
+Präteritum (Imparfait)
+ich stellte
+du stelltest
+er/sie/es stellte
+wir stellten
+ihr stelltet
+sie/Sie stellten
+werde stellen
+du wirst stellen
+er/sie/es wird stellen
+wir werden stellen
+ihr werdet stellen
+sie/Sie werden stellen
+
+gebäre
+du gebierst
+er/sie/es gebiert
+wir gebären
+ihr gebärt
+sie/Sie gebären
+Präteritum (Imparfait)
+ich gebar
+du gebarest
+er/sie/es gebar
+wir gebaren
+ihr gebaret
+sie/Sie gebaren
+werde gebären
+du wirst gebären
+er/sie/es wird gebären
+wir werden gebären
+ihr werdet gebären
+sie/Sie werden gebären
+
+stelle zufrieden
+du stellst zufrieden
+er/sie/es stellt zufrieden
+wir stellen zufrieden
+ihr stellt zufrieden
+sie/Sie stellen zufrieden
+Präteritum (Imparfait)
+ich stellte zufrieden
+du stelltest zufrieden
+er/sie/es stellte zufrieden
+wir stellten zufrieden
+ihr stelltet zufrieden
+sie/Sie stellten zufrieden
+werde zufrieden stellen
+du wirst zufrieden stellen
+er/sie/es wird zufrieden stellen
+wir werden zufrieden stellen
+ihr werdet zufrieden stellen
+sie/Sie werden zufrieden stellen
+
+lache
+du lachst
+er/sie/es lacht
+wir lachen
+ihr lacht
+sie/Sie lachen
+Präteritum (Imparfait)
+ich lachte
+du lachtest
+er/sie/es lachte
+wir lachten
+ihr lachtet
+sie/Sie lachten
+werde lachen
+du wirst lachen
+er/sie/es wird lachen
+wir werden lachen
+ihr werdet lachen
+sie/Sie werden lachen
+
+scherze
+du scherzt
+er/sie/es scherzt
+wir scherzen
+ihr scherzt
+sie/Sie scherzen
+Präteritum (Imparfait)
+ich scherzte
+du scherztest
+er/sie/es scherzte
+wir scherzten
+ihr scherztet
+sie/Sie scherzten
+werde scherzen
+du wirst scherzen
+er/sie/es wird scherzen
+wir werden scherzen
+ihr werdet scherzen
+sie/Sie werden scherzen
+
+folge
+du folgst
+er/sie/es folgt
+wir folgen
+ihr folgt
+sie/Sie folgen
+Präteritum (Imparfait)
+ich folgte
+du folgtest
+er/sie/es folgte
+wir folgten
+ihr folgtet
+sie/Sie folgten
+werde folgen
+du wirst folgen
+er/sie/es wird folgen
+wir werden folgen
+ihr werdet folgen
+sie/Sie werden folgen
+
+besiege
+du besiegst
+er/sie/es besiegt
+wir besiegen
+ihr besiegt
+sie/Sie besiegen
+Präteritum (Imparfait)
+ich besiegte
+du besiegtest
+er/sie/es besiegte
+wir besiegten
+ihr besiegtet
+sie/Sie besiegten
+werde besiegen
+du wirst besiegen
+er/sie/es wird besiegen
+wir werden besiegen
+ihr werdet besiegen
+sie/Sie werden besiegen
+
+rufe an
+du rufst an
+er/sie/es ruft an
+wir rufen an
+ihr ruft an
+sie/Sie rufen an
+Präteritum (Imparfait)
+ich rief an
+du riefst an
+er/sie/es rief an
+wir riefen an
+ihr rieft an
+sie/Sie riefen an
+werde anrufen
+du wirst anrufen
+er/sie/es wird anrufen
+wir werden anrufen
+ihr werdet anrufen
+sie/Sie werden anrufen
+
+werfe
+du wirfst
+er/sie/es wirft
+wir werfen
+ihr werft
+sie/Sie werfen
+Präteritum (Imparfait)
+ich warf
+du warfst
+er/sie/es warf
+wir warfen
+ihr warft
+sie/Sie warfen
+werde werfen
+du wirst werfen
+er/sie/es wird werfen
+wir werden werfen
+ihr werdet werfen
+sie/Sie werden werfen
+
+spiele
+du spielst
+er/sie/es spielt
+wir spielen
+ihr spielt
+sie/Sie spielen
+Präteritum (Imparfait)
+ich spielte
+du spieltest
+er/sie/es spielte
+wir spielten
+ihr spieltet
+sie/Sie spielten
+werde spielen
+du wirst spielen
+er/sie/es wird spielen
+wir werden spielen
+ihr werdet spielen
+sie/Sie werden spielen
+
+wähle
+du wählst
+er/sie/es wählt
+wir wählen
+ihr wählt
+sie/Sie wählen
+Präteritum (Imparfait)
+ich wählte
+du wähltest
+er/sie/es wählte
+wir wählten
+ihr wähltet
+sie/Sie wählten
+werde wählen
+du wirst wählen
+er/sie/es wird wählen
+wir werden wählen
+ihr werdet wählen
+sie/Sie werden wählen
+gehe,gehst,geht,gehen,geht,gehen ging,gingst,ging,gingen,gingt,gingen werde_gehen,wirst_gehen,wird_gehen,werden_gehen,werdet_gehen,werden_gehen
+kämpfe,kämpfst,kämpft,kämpfen,kämpft,kämpfen kämpfte,kämpftest,kämpfte,kämpften,kämpftet,kämpften werde_kämpfen,wirst_kämpfen,wird_kämpfen,werden_kämpfen,werdet_kämpfen,werden_kämpfen
+mag,magst,mag,mögen,mögt,mögen mochte,mochtest,mochte,mochten,mochtet,mochten werde_mögen,wirst_mögen,wird_mögen,werden_mögen,werdet_mögen,werden_mögen
+singe,singst,singt,singen,singt,singen sang,sangst,sang,sangen,sangt,sangen werde_singen,wirst_singen,wird_singen,werden_singen,werdet_singen,werden_singen
+tanze,tanzt,tanzt,tanzen,tanzt,tanzen tanzte,tanztest,tanzte,tanzten,tanztet,tanzten werde_tanzen,wirst_tanzen,wird_tanzen,werden_tanzen,werdet_tanzen,werden_tanzen
+diskutiere,diskutierst,diskutiert,diskutieren,diskutiert,diskutieren diskutierte,diskutiertest,diskutierte,diskutierten,diskutiertet,diskutierten werde_diskutieren,wirst_diskutieren,wird_diskutieren,werden_diskutieren,werdet_diskutieren,werden_diskutieren
+verstehe,verstehst,versteht,verstehen,versteht,verstehen verstand,verstandst,verstand,verstanden,verstandet,verstanden werde_verstehen,wirst_verstehen,wird_verstehen,werden_verstehen,werdet_verstehen,werden_verstehen
+lerne,lernst,lernt,lernen,lernt,lernen lernte,lerntest,lernte,lernten,lerntet,lernten werde_lernen,wirst_lernen,wird_lernen,werden_lernen,werdet_lernen,werden_lernen
