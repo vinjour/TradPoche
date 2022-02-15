@@ -7,15 +7,42 @@ Created on Tue Sep 28 14:06:55 2021
 
 grammarTable={
     "PH":-1,
+    -1:"PH",
     "PCT":0,
+    0:"PCT",
     "NAM":1,
+    1:"NAM",
     "VER":2,
+    2:"VER",
     "ADV":3,
+    3:"ADV",
     "ADJ":4,
+    4:"ADJ",
     "AUX":5,
+    5:"AUX",
     "PRO":6,
+    6:"PRO",
     "ART":7,
-    "PRE":8}
+    7:"ART",
+    "PRE":8,
+    8:"PRE",
+    "CON":9,
+    9:"CON",
+    "ONO":10,
+    10:"ONO",}
+                    #NEXT PCT NAM VER ADV ADJ AUX PRO ART PRE CON ONO   #PREV
+grammarTransitionTable=[[-1,  7,  6,  9,  5,  4,  8,  2,  1,  3,  0],   #PCT
+                        [-1,  8,  7,  6,  9,  5,  3,  4,  2,  1,  0],   #NAM
+                        [-1,  6,  0,  9,  7,  5,  4,  8,  3,  2,  1],   #VER
+                        [-1,  6,  5,  4,  7,  3,  8,  2,  9,  1,  0],   #ADV
+                        [-1,  9,  8,  7,  6,  5,  4,  2,  3,  1,  0],   #ADJ
+                        [-1,  8,  9,  7,  6,  5,  4,  3,  2,  1,  0],   #AUX
+                        [-1,  8,  9,  7,  6,  5,  4,  3,  2,  1,  0],   #PRO
+                        [-1,  8,  7,  6,  9,  5,  4,  3,  2,  1,  0],   #ART
+                        [-1,  8,  7,  6,  5,  4,  3,  9,  2,  1,  0],   #PRE
+                        [-1,  9,  8,  7,  6,  5,  4,  3,  2,  1,  0],   #CON
+                        [-1,  9,  8,  7,  6,  5,  4,  3,  2,  1,  0]]   #ONO
+
 
 languages={
     "none":-1,
@@ -230,13 +257,14 @@ frVerbIndex={
     "soudre":161,
     "suivre":162,
     "uire":163,
-    "vaincre":164}
+    "vaincre":164,}
 
 enIndex={
     }
 enVerbIndex={
     "be":0,
-    "have":1}
+    "to be":0,
+    "have":1,}
 
 Indexes=[frIndex,enIndex]
 VerbIndexes=[frVerbIndex,enVerbIndex]
@@ -247,14 +275,14 @@ class Word():
         Parameters
         ----------
         w : word to create, as a string
-        language : language the word is typed in, as a string
+        language : language the word is typed in
         grammar : grammatical class of the word, refer to table
         """
         self.w=w
-        self.language=language
+        self.language=language if language.__class__==int else languages[language]
         self.grammar=grammar
     
-    def idGramClass(self):
+    def idGramClass(self,prevClass):
         if self.language==-1:
             return
         lexicon=open("lexiques\\"+languages[self.language]+"Lexicon.txt",'r',-1,'utf-8')
@@ -264,23 +292,26 @@ class Word():
         for i in range(len(lexiList)):
             lexiList[i]=lexiList[i].split('\t')
         
+        found=False
         for i in Indexes[self.language][self.w[0]]:
-            if lexiList[i][0]==self.w:
-                rad=lexiList[i][1]
-                self.grammar=grammarTable[lexiList[i][2][0:3]]
+            if lexiList[i][0]==self.w and not found:
+                possibleGrammar=lexiList[i][3].split(',')
+                for j in range(len(possibleGrammar)):
+                    possibleGrammar[j]=grammarTable[possibleGrammar[j][0:3]]
+                if len(possibleGrammar)<=1:
+                    self.grammar=grammarTable[lexiList[i][2][0:3]]
+                else:
+                    grammarOrd=grammarTransitionTable[prevClass].copy()
+                    for j in range(len(possibleGrammar)):
+                        grammarOrd[possibleGrammar[j]]+=10
+                    self.grammar=grammarOrd.index(max(grammarOrd))
+                found=True
+            if found:
+                if grammarTable[lexiList[i][2][0:3]]==self.grammar:
+                    rad=lexiList[i][1]
+                    break
         self.__class__=grammarClassTable[self.grammar]
         self.convert(rad)
-        # for k in range(len(verbTableFr)):
-        #     for i in range(len(verbTableFr[k][0])):
-        #         for j in range(len(verbTableFr[k][0][i])):
-        #             if self.w==verbTableFr[k][0][i][j]:
-        #                 self.w=verbTableFr[k][0][i][0]
-        #                 self.grammar=2  
-        #                 self.__class__=Verb
-        #                 self.tense=k
-        #                 self.group=0
-        #                 self.person=j
-        #                 return
         return False
         
 
@@ -313,9 +344,9 @@ class Word():
         
     def display(self):
         """
-        Displays the word, its language, and its grammatical type.
+        Displays the word and its grammatical type.
         """
-        print(self.w,' '*(15-len(self.w)),self.language,' '*14,self.grammar,' '*14,end="")
+        print(self.w,' '*(15-len(self.w)),grammarTable[self.grammar],' '*12,end="")
     
     def write(self):
         return self.w
@@ -341,11 +372,12 @@ class Verb(Word):
         self.person=person
 
     def convert(self,rad):
-        #reading appropriate verb lexicon
+        #checking for infinitive*
         if self.w==rad:
-            self.tense=0
+            self.tense=-1
             self.person=0
             return
+        #reading appropriate verb lexicon
         lexicon=open("lexiques\\"+languages[self.language]+"VerbLexicon.txt",'r',-1,'utf-8')
         lexiList=lexicon.read().split('\n')
         lexicon.close()
@@ -369,6 +401,9 @@ class Verb(Word):
         print(self.tense,' '*14,self.person,end="")
     
     def write(self):
+        #checking for infinitive
+        if self.tense==-1:
+            return self.w
         #reading verb lexicon
         lexicon=open("lexiques\\"+languages[self.language]+"VerbLexicon.txt",'r',-1,'utf-8')
         lexiList=lexicon.read().split('\n')
@@ -424,6 +459,20 @@ class Preposition(Word):
     
     def convert(self,rad):
         return
+    
+class Conjunction(Word):
+    def __init__(self,w,language):
+        super().__init__(w,language,9)
+    
+    def convert(self,rad):
+        return
+    
+class Onomatopoeia(Word):
+    def __init__(self,w,language):
+        super().__init__(w,language,10)
+    
+    def convert(self,rad):
+        return
 
 grammarClassTable={
     0:Punctuation,
@@ -434,7 +483,9 @@ grammarClassTable={
     5:Auxiliary,
     6:Pronoun,
     7:Article,
-    8:Preposition}
+    8:Preposition,
+    9:Conjunction,
+    10:Onomatopoeia}
 
 class Sentence():
     def __init__(self,s,language):
@@ -454,18 +505,22 @@ class Sentence():
                 s=s.replace(i,' '+i+' ')
         s=s.split()
         s[0]=s[0].lower()
+            
         
         #Identifying grammatical classes
         for i in range(len(s)):
+            prevclass=self.table[i-1].grammar if i>0 else 0
             if s[i][0].isupper():
                 self.table.append(Word(s[i],-1,-1))
             elif not s[i][0].isalpha():
                 self.table.append(Word(s[i],-1,0))
+                if i+1<len(s):
+                    s[i+1]=s[i+1].lower()
             else:
                 self.table.append(Word(s[i],languages[language],-1))
-            self.table[i].idGramClass()
+            self.table[i].idGramClass(prevclass)
         
-        #turning auxiliaries into verbs if next word is not auxiliary
+        #turning verbs into auxiliaries if next word is verb
         for i in range(len(self.table)-1):
             if self.table[i].grammar==2 and self.table[i+1].grammar==2:
                 self.table[i].grammar=5
@@ -493,30 +548,16 @@ class Sentence():
     
     def write(self):
         """
-        Prints the sentence in console.
+        Returns the sentence.
         """
         s=self.table[0].w.title()
         for i in range(1,len(self.table)):
             s+=(' '*((self.table[i].grammar!=0)&(self.table[i-1].w!="-")))+self.table[i].write()
-        print(s)
+        return s
   
 
-
-# greeting=word("ordinateur","français","noun")
-# greeting.translate("english")
-# greeting.display()
-
-# action=Word("est","français",-1)
-# action.display()
-# print()
-# action.idVerb()
-# action.display()
-# action.translate("english")
-# print()
-# print(action.write())
-
-# test=Sentence("Bonjour, je suis un traducteur à peu près fonctionnel!","fr")
-test=Sentence("Bien le bonjour, j'ai assez peu de verbes à ma disposition pour le moment","fr")
-test.write()
+test=Sentence("Je suis prêt à la mise sur le marché! Appuyer sur X pour douter.","fr")
+print(test.write())
+test.display()
 test.translate("en")
-test.write()
+print(test.write())
