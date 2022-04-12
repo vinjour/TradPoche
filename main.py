@@ -69,12 +69,13 @@ class LoginWindow(Screen):
 
 
 class TradScreen(Screen):
+    my_text=StringProperty("Press and hold to record your message")
+    textecritrad=StringProperty("Translation")
+    
     def __init__(self,**kwargs):
         super(TradScreen, self).__init__(**kwargs)
         self.gameView = GameView(Recorder("mic.wav"),Player("mic.wav"))
         self.add_widget(self.gameView)
-        self.textecritrad=StringProperty("Translation")
-        self.my_text=StringProperty("Press and hold to record your message")
 
     def propout(self):
         sm.current = "properties"
@@ -86,13 +87,13 @@ class TradScreen(Screen):
         self.my_text=self.gameView.stop_record()
 
     def traduire(self):
-        self.gameView.traduire( self.ids.buttonDepart.text,
-                                self.ids.buttonArrivee.text)
+        self.gameView.traduire(self.ids.buttonDepart.text,
+                               self.ids.buttonArrivee.text)
 
     def traduire2(self):
         self.textecritrad=self.gameView.traduire2(self.ids.buttonDepart.text,
-                                                  self.ids.buttonArrivee.text,
-                                                  self.ids.textecrit.text)
+                                                    self.ids.buttonArrivee.text,
+                                                    self.ids.textecrit.text)
 
     def dicter(self):
         self.gameView.dicter()
@@ -221,7 +222,7 @@ class Recorder():
 class GameView(Widget):
     textToCode={
         "Source Language":"fr",
-        "Target language":"en",
+        "Target Language":"en",
         "English":"en",
         "Spanish":"es",
         "French":"fr",
@@ -267,7 +268,9 @@ class GameView(Widget):
     def traduire(self,L1,L2):
         sentence = Sentence(self.my_text,GameView.textToCode[L1])
         sentence.translate(GameView.textToCode[L2])
-        return sentence.write()
+        t=sentence.write()
+        self.textecritrad=t
+        return t
 
     def traduire2(self,L1,L2,text):
         sentence=Sentence(str(text),GameView.textToCode[L1])
