@@ -71,37 +71,34 @@ class LoginWindow(Screen):
 class TradScreen(Screen):
     def __init__(self,**kwargs):
         super(TradScreen, self).__init__(**kwargs)
-        global gameview
-        gameview = GameView(Recorder("mic.wav"),Player("mic.wav"))
-        self.add_widget(gameview)
-
-    textecritrad=StringProperty("Translation")
-    my_text = StringProperty("Press and hold to record your message")
+        self.gameView = GameView(Recorder("mic.wav"),Player("mic.wav"))
+        self.add_widget(self.gameView)
+        self.textecritrad=StringProperty("Translation")
+        self.my_text=StringProperty("Press and hold to record your message")
 
     def propout(self):
         sm.current = "properties"
 
     def start_record(self):
-        gameview.start_record()
+        self.gameView.start_record()
 
     def stop_record(self):
-        gameview.stop_record()
-        self.my_text = string2
+        self.my_text=self.gameView.stop_record()
 
     def traduire(self):
-        self.mytext=gameview.traduire(self.ids.buttonDepart.text,
-                                      self.ids.buttonArrivee.text)
+        self.gameView.traduire( self.ids.buttonDepart.text,
+                                self.ids.buttonArrivee.text)
 
     def traduire2(self):
-        self.textecritrad=gameview.traduire2(self.ids.buttonDepart.text,
-                                             self.ids.buttonArrivee.text,
-                                             self.ids.textecrit.text)
+        self.textecritrad=self.gameView.traduire2(self.ids.buttonDepart.text,
+                                                  self.ids.buttonArrivee.text,
+                                                  self.ids.textecrit.text)
 
     def dicter(self):
-        gameview.dicter()
+        self.gameView.dicter()
     
     def dicter2(self):
-        gameview.dicter2()
+        self.gameView.dicter2()
 
 
 class PropertiesWindow(Screen):
@@ -230,19 +227,19 @@ class GameView(Widget):
         "French":"fr",
         "Italian":"it",
         "German":"de"}
+    
     voice={
         "en":2,
         "es":6,
         "fr":7,
         "it":9,
         "de":11,}
+    
     def __init__(self, recorder, player, **kwargs):
         super().__init__(**kwargs)
         self.recorder = recorder
         self.player = player
-        self.sentence = Sentence
-        self.langue1="fr"
-        self.langue2="en"
+        self.sentence = None
 
     def start_record(self):
         if self.player.playing == 0:
@@ -263,19 +260,14 @@ class GameView(Widget):
                 break
             if rec.AcceptWaveform(data):
                 print(rec.Result())
-
-        string = rec.PartialResult()
-        global string2
-        string2 = re.sub('\}|\{|\:|\"partial"|\"','', string)
-        self.my_text = string2
-        return string2
+        string=re.sub('\}|\{|\:|\"partial"|\"','', rec.PartialResult())
+        self.my_text = string
+        return string
 
     def traduire(self,L1,L2):
-        sentence = Sentence(string2,GameView.textToCode[L1])
+        sentence = Sentence(self.my_text,GameView.textToCode[L1])
         sentence.translate(GameView.textToCode[L2])
-        t=sentence.write()
-        self.my_text=t
-        return t
+        return sentence.write()
 
     def traduire2(self,L1,L2,text):
         sentence=Sentence(str(text),GameView.textToCode[L1])
